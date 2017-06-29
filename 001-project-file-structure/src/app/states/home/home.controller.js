@@ -14,8 +14,8 @@
     vm.signUpToday = signUpToday;
 
     function signUpToday(){
-     swal({
-        title: 'Submit email to run ajax request',
+      swal({
+        title: 'Type in your email address',
         input: 'email',
         showCancelButton: true,
         confirmButtonText: 'Submit',
@@ -32,11 +32,22 @@
           })
         },
         allowOutsideClick: false
-      }).then(function (email) {
+      }).then(function () {
         swal({
-          type: 'success',
-          title: 'Ajax request finished!',
-          html: 'Submitted email: ' + email
+          title: 'Enter your password',
+          input: 'password',
+          inputAttributes: {
+           'maxlength': 10,
+           'autocapitalize': 'off',
+           'autocorrect': 'off'
+          }
+        }).then(function (password) {
+          if (password) {
+            swal({
+             type: 'success',
+             html: 'Welcome!'
+            })
+          }
         })
       })
     }
