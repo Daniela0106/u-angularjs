@@ -5,10 +5,10 @@
     .module('angularEx1')
     .controller('HomeController', HomeController);
 
-  HomeController.$inject = [];
+  HomeController.inject = ['$state'];
 
   /** @ngInject */
-  function HomeController() {
+  function HomeController($state) {
     var vm = this;
     vm.mainTitle = 'Talos Training Program';
     vm.signUpToday = signUpToday;
@@ -48,8 +48,9 @@
              html: 'Welcome!'
             })
           }
-        })
-      })
+        });
+      });
+      $state.go('dashboard');
     }
 
   }
