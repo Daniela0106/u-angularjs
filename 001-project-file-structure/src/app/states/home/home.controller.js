@@ -14,14 +14,6 @@
     vm.signUpToday = signUpToday;
 
     function signUpToday(){
-      // var person = prompt("Please enter your name:", "Your name here");
-      // if (person == null || person == "") {
-      //   vm.txt = "User cancelled the prompt.";
-      // } else {
-      //   vm.txt = "Hello " + person + "! How are you today?";
-      //   alert(person + ", Welcome to Talos Digital!");
-      // }
-
      swal({
         title: 'Submit email to run ajax request',
         input: 'email',
