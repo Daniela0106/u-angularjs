@@ -18,7 +18,10 @@
         url: '/dashboard',
         templateUrl: 'app/states/dashboard/dashboard.html',
         controller: 'DashboardController',
-        controllerAs: 'dashboardCtrl'
+        controllerAs: 'dashboardCtrl',
+        params: {
+          email: undefined
+        }
       });
     $urlRouterProvider.otherwise('/');
   }

@@ -26,6 +26,17 @@ html {
   padding: 0.2em 0;
 }
 
+.footer{
+  padding: 1em 0 0 0;
+  color: white;
+  background-color: black;
+  clear: left;
+  text-align: center;
+  div{
+    padding-bottom: 20px;
+  }
+}
+
 /**
  *  Do not remove the comment below. It's the markers used by gulp-inject to inject
  *  all your sass files automatically

@@ -5,8 +5,12 @@
       .module('angularEx1')
       .controller('DashboardController', DashboardController);
 
+  DashboardController.inject = ['$stateParams'];
+
   /** @ngInject */
-  function DashboardController() {
+  function DashboardController($stateParams) {
     var vm = this;
+
+    vm.userEmail = $stateParams.email;
   }
 })();

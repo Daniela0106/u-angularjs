@@ -12,6 +12,7 @@
     var vm = this;
     vm.mainTitle = 'Talos Training Program';
     vm.signUpToday = signUpToday;
+    var userEmail = '';
 
     function signUpToday(){
       swal({
@@ -21,6 +22,7 @@
         confirmButtonText: 'Submit',
         showLoaderOnConfirm: true,
         preConfirm: function (email) {
+          userEmail = email;
           return new Promise(function (resolve, reject) {
             setTimeout(function() {
               if (email === 'taken@example.com') {
@@ -46,11 +48,11 @@
             swal({
              type: 'success',
              html: 'Welcome!'
-            })
+            });
+            $state.go('dashboard', {email: userEmail});
           }
         });
       });
-      $state.go('dashboard');
     }
 
   }
