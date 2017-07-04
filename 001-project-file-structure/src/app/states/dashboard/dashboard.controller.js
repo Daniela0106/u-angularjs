@@ -2,8 +2,8 @@
   'use strict';
 
   angular
-      .module('angularEx1')
-      .controller('DashboardController', DashboardController);
+    .module('angularEx1')
+    .controller('DashboardController', DashboardController);
 
   DashboardController.inject = ['$stateParams'];
 
