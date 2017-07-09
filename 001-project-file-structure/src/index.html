@@ -2,7 +2,7 @@
 <html ng-app="angularEx1">
   <head>
     <meta charset="utf-8">
-    <title>Angular Ex1</title>
+    <title>Talos Training Program</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -20,13 +20,26 @@
     <!-- endbuild -->
   </head>
   <body>
+
+  <header>
+    <div class="navbar">
+      <a href="#about">About</a>
+      <a href="#manuals">Manuals</a>
+      <a href="#communication">Communication</a>
+      <a href="#devices">Devices</a>
+      <a href="#devtools">Development Tools</a>
+    </div>
+  </header>
+
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+
     <section class="site container d-flex flex-column">
         <main class="site-content d-flex" ui-view>
         </main>
     </section>
+
     <footer class="footer">
       <div>© Talos University 2017</div>
     </footer>

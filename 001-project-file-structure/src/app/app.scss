@@ -12,7 +12,7 @@ html {
 }
 
 .site{
-  min-height: 100vh;
+  min-height: 85vh;
 }
 
 .site-content{
@@ -26,7 +26,27 @@ html {
   padding: 0.2em 0;
 }
 
-.footer{
+header{
+  padding-top: 2rem;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  display: inline-block;
+  width: 100%;
+  .navbar {
+    overflow: hidden;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: #000;
+    flex-direction: row;
+  }
+  a{
+    padding-right: 5px;
+  }
+}
+
+footer{
   padding: 1em 0 0 0;
   color: white;
   background-color: black;

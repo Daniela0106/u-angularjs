@@ -3,5 +3,5 @@
 
   angular
     .module('angularEx1')
-    .constant('SITE_NAME', 'Talos Training Program');
+    .constant('SITE_NAME', 'Talos Induction Program');
 })();
